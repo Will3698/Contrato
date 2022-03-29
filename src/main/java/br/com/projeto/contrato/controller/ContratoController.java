@@ -59,7 +59,7 @@ public class ContratoController {
     }
 
     //retorna contrato proximo a vencer 15
-    @GetMapping(path = "/contrato/vencertrinta")
+    @GetMapping(path = "/contrato/vencer15")
     public ResponseEntity<List<Contrato>> listaContratoProximoVencer15(){
         return ResponseEntity.status(HttpStatus.OK).body(contratoService.listaContratoProximoVencer15());
     }
